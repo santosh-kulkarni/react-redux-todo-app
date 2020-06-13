@@ -26,7 +26,7 @@ function TodoApp(props) {
     return (
         <React.Fragment>
             <h1>Welcome to Todo App</h1>
-            <span>Click on the to do items to change the status from INCOMPLETE to COMPLETE</span><br /><br />
+            <span>Click on the to do items to change the status from INCOMPLETE to COMPLETE and vice versa</span><br /><br />
             <input type="text" value={input} onChange={(e) => changeInput(e)} />&nbsp;
             <button onClick={() => {
                 props.addToDo(input);
