@@ -28,7 +28,7 @@ function TodoApp(props) {
             <h1>Welcome to Todo App</h1>
             <span>Click on the to do items to change the status from INCOMPLETE to COMPLETE and vice versa</span><br /><br />
             <input type="text" value={input} onChange={(e) => changeInput(e)} />&nbsp;
-            <button onClick={() => {
+            <button disabled={input.length < 1} onClick={() => {
                 props.addToDo(input);
                 setInput("");
             }}>Add Tddo</button>
